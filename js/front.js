@@ -20,6 +20,7 @@ $(document).ready(function () {
             $("#nav").removeClass("bg-transparent");
             $("#nav").addClass("bg-glass");  
 
+            //cambiando color de letras del nav
             if ($('#header').hasClass("navbar-blue")) {
                 $("#header").removeClass('navbar-blue');
                 $("#header").addClass('flag');
@@ -30,6 +31,7 @@ $(document).ready(function () {
             $("#nav").removeClass("bg-glass");
             $("#nav").addClass("bg-transparent");
 
+            //cambiando color de letras del nav
             if ($('#header').hasClass("flag")) {
                 $("#header").addClass('navbar-blue');
                 $("#header").removeClass('flag');
