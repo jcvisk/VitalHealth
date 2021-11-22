@@ -1,0 +1,148 @@
+.btn-know_more{
+    font-family: "Roboto";
+    background-color: var(--green);
+    color: white;
+    font-size: 0.8rem;
+    --hover: var(--green);
+}
+.btn-see_more{
+    color: white;
+    border-radius: 16px;
+    border: 1px solid white;
+    padding: 4px 24px;
+    --hover: white;
+}
+.btn-green{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    border-radius: 32px;
+    padding: 4px 24px;
+    background-color: var(--green);
+    border: 1px solid var(--green);
+    min-height: 58px;
+    --hover: var(--green);
+}
+
+.btn-blue{
+    color: white;
+    border-radius: 32px;
+    padding: 8px 24px;
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    --hover: var(--blue);
+}
+
+.btn-product{
+    min-width: 50%;
+    min-height: 30px;
+    background-color: var(--green);
+    border-radius: 32px;
+    --hover: var(--blue);
+}
+
+.btn-know_more:hover, 
+.btn-know_more:focus,
+.btn-see_more:hover, 
+.btn-see_more:focus,
+.btn-green:hover, 
+.btn-green:focus,
+.btn-blue:hover, 
+.btn-blue:focus{
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+    color: black;
+    background-color: white;
+}
+
+.btn-vitax{
+    background-color: var(--vitax);
+    --hover: var(--vitax);
+}
+.btn-vglutax{
+    background-color: var(--vglutax);
+    --hover: var(--vglutax);
+}
+.btn-vglutation{
+    background-color: var(--vglutation);
+    --hover: var(--vglutation);
+}
+.btn-vcontrol{
+    background-color: var(--vcontrol);
+    --hover: var(--vcontrol);
+}
+.btn-vtedetox{
+    background-color: var(--vtedetox);
+    --hover: var(--vtedetox);
+}
+.btn-vkafetermo{
+    background-color: var(--vkafetermo);
+    --hover: var(--vkafetermo);
+}
+.btn-vglucalose{
+    background-color: var(--vglucalose);
+    --hover: var(--vglucalose);
+}
+.btn-vfortyflora{
+    background-color: var(--vfortyflora);
+    --hover: var(--vfortyflora);
+}
+.btn-vcolagen{
+    background-color: var(--vcolagen);
+    --hover: var(--vcolagen);
+}
+.btn-vorganex{
+    background-color: var(--vorganex);
+    --hover: var(--vorganex);
+}
+.btn-vitadol{
+    background-color: var(--vitadol);
+    --hover: var(--vitadol);
+}
+.btn-vcurcumax{
+    background-color: var(--vcurcumax);
+    --hover: var(--vcurcumax);
+}
+.btn-vitalboost{
+    background-color: var(--vitalboost);
+    --hover: var(--vitalboost);
+}
+
+.btn-vitax:hover,
+.btn-vitax:focus,
+.btn-vglutax:hover,
+.btn-vglutax:focus,
+.btn-vglutation:hover,
+.btn-vglutation:focus,
+.btn-vcontrol:hover,
+.btn-vcontrol:focus,
+.btn-vtedetox:hover,
+.btn-vtedetox:focus,
+.btn-vkafetermo:hover,
+.btn-vkafetermo:focus,
+.btn-vglucalose:hover,
+.btn-vglucalose:focus,
+.btn-vfortyflora:hover,
+.btn-vfortyflora:focus,
+.btn-vcolagen:hover,
+.btn-vcolagen:focus,
+.btn-vorganex:hover,
+.btn-vorganex:focus,
+.btn-vitadol:hover,
+.btn-vitadol:focus,
+.btn-vcurcumax:hover,
+.btn-vcurcumax:focus,
+.btn-vitalboost:hover,
+.btn-vitalboost:focus{
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+    color: black;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 var(--hover);
+   }
+}

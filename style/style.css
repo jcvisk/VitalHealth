@@ -1,0 +1,528 @@
+@import url(header.css);
+@import  url(footer.css);
+@import  url(sociales.css);
+@import  url(buttons.css);
+
+
+:root{
+    --green: #69a745;
+    --green-light : #b8d6a7;
+    --avocado: #a6b53a;
+    --blue: #0f2b69;
+    --gray: #a2a2a2;
+
+    --vitax: #de8a71;
+    --vglutax: #7e82ae;
+    --vglutation: #c4aba5;
+    --vcontrol: #26b09b;
+    --vtedetox: #457e42;
+    --vkafetermo: #0084c5;
+    --vglucalose: #8083af;
+    --vfortyflora: #899ea4;
+    --vcolagen: #c787ac;
+    --vorganex: #bcc245;
+    --vitadol:#b05f7b;
+    --vcurcumax: #ccb732;
+    --vitalboost: #3eb3b0;
+
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+.container-fluid {
+    padding-right: 6% !important;
+    padding-left: 6% !important;
+}
+.hr{
+    border: 1px solid var(--gray);
+    background-color: var(--gray);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-- HelveticaNeue --*/
+@font-face {
+    font-family: "HelveticaNeue-bold";
+    src: url(../assets/fonts/HelveticaNeue/HelveticaNeuBold.ttf);
+}
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url(../assets/fonts/HelveticaNeue/HelveticaNeue.ttf);
+}
+@font-face {
+    font-family: "HelveticaNeue-Light";
+    src: url(../assets/fonts/HelveticaNeue/HelveticaNeueLight.ttf);
+}
+@font-face {
+    font-family: "HelveticaNeue-Thin";
+    src: url(../assets/fonts/HelveticaNeue/HelveticaNeueThin.ttf);
+}
+@font-face {
+    font-family: "HelveticaNeue-It";
+    src: url(../assets/fonts/HelveticaNeue/HelveticaNeueIt.ttf);
+}
+/*-- Roboto --*/
+@font-face {
+    font-family: "Roboto";
+    src: url(../assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "Roboto-Light";
+    src: url(../assets/fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url(../assets/fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../assets/fonts/Roboto/Roboto-Bold.ttf);
+}
+
+/*-- Texts --*/
+h1,h2,h3,h4,h5,h6{
+    font-family: "Roboto-Bold";
+}
+h1{
+    font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
+}
+h2{
+    font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+h3{
+    font-size: calc(19px + (35 - 19) * ((100vw - 300px) / (1600 - 300)));
+}
+h5{
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
+p.txt{
+    font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
+.text-blue{
+    color: var(--blue) !important;
+}
+/*-- Backgrounds --*/
+.bg-glass{
+    background: rgba(15, 44, 105, 0.384) !important;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ) !important;
+    backdrop-filter: blur( 5px ) !important;
+    -webkit-backdrop-filter: blur( 5px ) !important;
+    transition: ease 1s;
+}
+.bg-glass-toggle{
+    background: rgba(15, 44, 105, 0.384) !important;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ) !important;
+    backdrop-filter: blur( 5px ) !important;
+    -webkit-backdrop-filter: blur( 5px ) !important;
+    transition: ease 1s;
+}
+.bg-transparent{
+    transition: ease 1s;
+}
+.bg-green{
+    background-color: var(--green);
+}
+.bg-blue{
+    background-color: var(--blue);
+}
+
+/*--- Carousel ---*/
+#carouselIndex .carousel-caption{
+    top: 10%;
+    bottom: 15%;
+    margin: auto;
+}
+#carouselIndex p{
+    font-family: "Roboto-Light";
+    font-size: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
+
+/*-----------------
+---    INDEX    ---
+-----------------*/
+
+/*--- Sections ---*/
+section.sections{
+    color: white;
+    font-family: "HelveticaNeue-Light";
+}
+section.sections div.row>div{
+    min-height: 170px;
+    padding: 3% 3% 1% 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+section.sections div.row>div:nth-child(1){
+    background-image: url(../img/empresa.png) !important;
+    background-size: cover;
+}
+section.sections div.row>div:nth-child(2){
+    background-image: url(../img/fabricacion.png) !important;
+    background-size: cover;
+    background-position: right;
+}
+section.sections div.row>div:nth-child(3){
+    background-image: url(../img/productos.png) !important;
+    background-size: cover;
+}
+section.sections div.row>div:nth-child(4){
+    background-image: url(../img/oportunidad.png) !important;
+    background-size: cover;
+}
+/*--- Weillcome ---*/
+section.wellcome{
+    color: white;
+    background-image: url(../img/backgrounds/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+section.wellcome p,
+section.wellcome h3{
+    font-family: "HelveticaNeue-Thin";
+}
+
+section.wellcome .mt-sp{
+    margin-top: 20%;
+}
+
+/*-----------------
+---   FOUNDES   ---
+-----------------*/
+section.attribute{
+    color: white;
+    background-image: url(../img/backgrounds/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: center;
+}
+section .semicircle{
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    top: -10%;
+    width: 35%;
+}
+/*-- attribute --*/
+section.attribute table th{
+    padding: 1.7rem;
+    vertical-align: middle;
+}
+section.attribute p{
+    font-family: "HelveticaNeue-Thin";
+    margin: 0;
+}
+
+/*-- members --*/
+section.members h1{
+    color: var(--blue);
+}
+section.members h4{
+    color: var(--green);
+    font-size: calc(17px + (30 - 17) * ((100vw - 300px) / (1600 - 300)));
+}
+section.members p{
+    color: var(--blue);
+    font-family: "Roboto";
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+section.members img{
+    filter: drop-shadow(0px 0px 20px var(--gray));
+}
+
+/*-- values --*/
+section.values{
+    color: white;
+}
+section.values h1,
+section.values h4{
+    color: var(--blue);
+}
+section.values h4{
+    font-size: calc(17px + (30 - 17) * ((100vw - 300px) / (1600 - 300)));
+}
+section.values .row>div{
+    display: flex;
+    flex-direction: column;
+}
+section.values .card-blue{
+    background-color: #3c5385;
+    padding: 5%;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    flex-grow: 1;
+}
+section.values .card-blue>p{
+    font-family: "Roboto-Light";
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+    color: white;
+}
+
+/*-----------------
+---   PRODUCTS  ---
+-----------------*/
+/*-- features --*/
+section.features h5{
+    color: var(--blue);
+    font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+section.features p{
+    color: var(--blue);
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-family: "Roboto-Light";
+    font-weight: bold;
+
+}
+/*-- best-products --*/
+section.best-products{
+    color: white;
+}
+section.best-products .triangulo{
+    position: absolute;
+    right: 0px;
+    top: -200%;
+    
+}
+section.best-products .triangulo2{
+    position: absolute;
+    right: 0px;
+    z-index: -1;
+}
+SECTION.best-products .logo-transparent{
+    width: calc(80px + (150 - 80) * ((100vw - 300px) / (1600 - 300)));
+}
+
+/*-- products --*/
+section.products h3,
+section.products h5{
+    color: var(--blue);
+}
+section.products h5{
+    font-family: "Roboto-Medium";
+    font-size: calc(13px + (20 - 13) * ((100vw - 300px) / (1600 - 300)));
+}
+
+section.products .carousel-continer{
+    position: relative;
+}
+section.products .carousel-continer .next{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    z-index: 100;
+    cursor: pointer;
+
+    filter: drop-shadow(5px 5px 10px var(--gray));
+}
+section.products .carousel-continer .prev{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    z-index: 100;
+    cursor: pointer;
+
+    filter: drop-shadow(5px 5px 10px var(--gray));
+}
+
+/*-----------------
+---   PRODUCTS  ---
+-----------------*/
+.top-logo{
+    position: absolute;
+    right: 0;
+    width:  calc(170px + (400 - 170) * ((100vw - 300px) / (1600 - 300)));
+    filter: drop-shadow(10px 10px 20px var(--gray));
+}
+section.separador-top{
+    height: 100px;
+}
+section.separador-bottom{
+    height: 100px;
+}
+
+section.product-descrip .rectangle{
+    position: absolute;
+    top: 20%;
+    width:  calc(90px + (180 - 90) * ((100vw - 300px) / (1600 - 300)));
+}
+section.product-descrip h1,
+section.product-descrip p{
+    color: var(--blue);
+}
+section.product-descrip p,
+section.descripcion p{
+    font-family: "HelveticaNeue-Light";
+}
+
+#v-itax section.descripcion{
+    color: var(--blue);
+    background-image: url(../img/backgrounds/bg4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+}
+section .beneficios h4,
+section .beneficios ul>li{
+    font-family: "HelveticaNeue-bold" !important;
+    font-size: calc(17px + (25 - 17) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: bold !important;
+    font-style: italic !important;
+}
+section .ingredientes h4{
+    font-weight: bold !important;
+    font-style: italic !important;
+}
+
+section .beneficios ul{
+    margin-left: 4%;
+}
+/*-- --*/
+#v-tedetox section.product-descrip h1{
+    color: var(--vtedetox) !important;
+}
+#v-tedetox section.descripcion{
+    color: var(--blue);
+    /*
+    background-image: url(../img/backgrounds/bg5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    */
+}
+/*-- --*/
+#v-collagen section.product-descrip h1{
+    color: var(--vcolagen) !important;
+}
+#v-collagen section.descripcion{
+    color: var(--blue);
+    background-image: url(../img/backgrounds/bg5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+}
+/*-- --*/
+#v-kafetermo section.product-descrip h1{
+    color: var(--vkafetermo) !important;
+}
+#v-kafetermo section.descripcion{
+    color: var(--blue);
+    /*
+    background-image: url(../img/backgrounds/bg5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    */
+}
+/*-- --*/
+#v-organex section.product-descrip h1{
+    color: var(--vorganex) !important;
+}
+#v-organex section.descripcion{
+    color: var(--blue);
+    background-image: url(../img/backgrounds/bg6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+}
+/*-- --*/
+#v-glutation section.product-descrip h1{
+    color: var(--vglutation) !important;
+}
+#v-glutation section.descripcion{
+    color: var(--blue);
+    background-image: url(../img/backgrounds/bg7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+}
+/*-- --*/
+#v-glucalose section.product-descrip h1{
+    color: var(--vglucalose) !important;
+}
+#v-glucalose section.descripcion{
+    color: var(--blue);
+    background-image: url(../img/backgrounds/bg8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+}
+/*-- --*/
+#v-itadol section.product-descrip h1{
+    color: var(--vitadol) !important;
+}
+#v-itadol section.descripcion{
+    color: var(--blue);
+    background-image: url(../img/backgrounds/bg9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+}
+/*-- --*/
+#v-control section.product-descrip h1{
+    color: var(--vcontrol) !important;
+}
+#v-control section.descripcion{
+    color: var(--blue);
+    background-image: url(../img/backgrounds/bg10.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+}
+/*-- --*/
+#v-fortyflora section.product-descrip h1{
+    color: var(--vfortyflora) !important;
+}
+#v-fortyflora section.descripcion{
+    color: var(--blue);
+    background-image: url(../img/backgrounds/bg11.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+}
+/*-- --*/
+#v-curcumax section.product-descrip h1{
+    color: var(--vcurcumax) !important;
+}
+#v-curcumax section.descripcion{
+    color: var(--blue);
+    background-image: url(../img/backgrounds/bg12.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+}
+/*-- --*/
+#v-italboost section.product-descrip h1{
+    color: var(--vitalboost) !important;
+}
+#v-italboost section.descripcion{
+    color: var(--blue);
+    background-image: url(../img/backgrounds/bg13.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+}

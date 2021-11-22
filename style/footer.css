@@ -1,0 +1,27 @@
+/*--- Footer ---*/
+footer.footer{
+    color: white;
+    background-color: var(--green);
+    position: relative;
+    /*z-index: -1;*/
+}
+footer.footer ul>li,
+footer.footer ul>li>a{
+    font-family: "HelveticaNeue-Light";
+    font-size: calc(15px + (18 - 15) * ((100vw - 300px) / (1600 - 300))) !important;
+    color: white !important;
+    padding: 0;
+}
+footer.footer .info{
+    list-style: none !important;
+}
+footer.footer .text-disclaimer{
+    color: var(--green-light) !important;
+    font-size: calc(10px + (15 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+footer .triangulo3{
+    position: absolute;
+    top: -23%;
+    left: 0;
+    width: 50%;
+}

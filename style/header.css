@@ -1,0 +1,95 @@
+.align-start{
+    height: 100%!important;
+    align-items: self-start;
+}
+nav.navbar .navbar-nav{
+    align-items: flex-start;
+}
+.img-rspv{
+    width: calc(70px + (100 - 70) * ((100vw - 300px) / (1600 - 300)));
+}
+nav.navbar a.nav-link{
+    font-family: "Roboto";
+    color: white !important;
+    font-size: 0.9rem;
+    padding: 3px 6px;
+}
+nav.navbar li{
+    margin: 5px;
+    border-radius: 16px;
+    font-family: "Roboto";
+}
+nav.navbar li.active{
+    background-color: var(--avocado);
+}
+nav.navbar li.active>a{
+    color: white !important;
+}
+nav.navbar li.item-blue{
+    background-color: var(--blue);
+}
+nav.navbar li.item-blue>a{
+    color: white !important;
+}
+nav.navbar li.item-white{
+    background-color: white;
+}
+nav.navbar li.active,
+nav.navbar li.item-blue,
+nav.navbar li.item-white{
+    -webkit-box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.5); 
+    box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.5);
+}
+nav.navbar li.item-white a{
+    color: var(--green) !important;
+}
+nav.navbar ul.n-nav-first li:hover{
+    background-color: var(--avocado);
+    -webkit-box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.5); 
+    box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.5);
+}
+nav.navbar ul.n-nav-first li:hover>a{
+    color: white !important;
+}
+/*--Nav dropdown menu*/
+ul.n-nav-first li.dropdown .dropdown-menu{
+    background-color: var(--green);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.5); 
+    box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.5);
+}
+ul.n-nav-first li.dropdown .dropdown-item{
+    color: white !important;
+}
+ul.n-nav-first li.dropdown .dropdown-item:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+ul.n-nav-first li.dropdown .dropdown-divider{
+    border:1px solid var(--green-light);
+    background-color: var(--green-light);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul.n-nav-first li.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../img/toggler-icon.svg);
+}
+.navbar-toggler {
+    border: none !important;
+}
+/*-- navar blue --*/
+header.navbar-blue a.nav-link {
+    color: var(--blue) !important;
+}
+header.navbar-blue #logo-header{
+    filter: drop-shadow(0px 10px 10px var(--gray));
+}
+
+/**/
+#separator{
+    background-color:var(--blue);
+}
