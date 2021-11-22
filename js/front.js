@@ -1,8 +1,5 @@
 $(document).ready(function () {
 
-    let navHeight = $('#header').height();
-    $('#separator').css("height", navHeight);
-
     //Inicializando WOW
     new WOW().init();
 
@@ -48,6 +45,12 @@ $(document).ready(function () {
         $("#nav").toggleClass('align-start');
         $("#nav").toggleClass('bg-glass-toggle');
     });
+
+    /*
+    Obteniendo el hight del header y agregandolo al div separador
+    */
+    let navHeight = $('#header').height();
+    $('#separator').css("height", navHeight);
 });
 
 
