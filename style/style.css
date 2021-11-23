@@ -526,3 +526,17 @@ section .beneficios ul{
     background-position-x: center;
     background-position-y: top;
 }
+/*-- --*/
+#v-glutax section.product-descrip h1{
+    color: var(--vglutax) !important;
+}
+/*
+#v-glutax section.descripcion{
+    color: var(--blue);
+    background-image: url(../img/backgrounds/bg13.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+}
+*/
