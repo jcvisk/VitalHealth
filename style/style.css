@@ -8,15 +8,15 @@
     --green: #69a745;
     --green-light : #b8d6a7;
     --avocado: #a6b53a;
-    --blue: #0f2b69;
+    --blue: #102c6e;
     --gray: #a2a2a2;
 
     --vitax: #de8a71;
     --vglutax: #7e82ae;
     --vglutation: #c4aba5;
     --vcontrol: #26b09b;
-    --vtedetox: #457e42;
-    --vkafetermo: #0084c5;
+    --vtedetox: #41773e;
+    --neurokafe: #0084c5;
     --vglucalose: #8083af;
     --vfortyflora: #899ea4;
     --vcolagen: #c787ac;
@@ -24,7 +24,8 @@
     --vitadol:#b05f7b;
     --vcurcumax: #ccb732;
     --vitalboost: #3eb3b0;
-
+    --vitarly: #006fad;
+    --vthermokafe: #b02626;
 }
 *, *::before, *::after {
     box-sizing: border-box;
@@ -217,8 +218,14 @@ section .semicircle{
 }
 /*-- attribute --*/
 section.attribute table th{
-    padding: 1.7rem;
     vertical-align: middle;
+}
+.vineta{
+    width: calc(27px + (40 - 27) * ((100vw - 300px) / (1600 - 300))) !important;
+    
+}
+section.attribute table td{
+    padding: 1.7rem;
 }
 section.attribute p{
     font-family: "HelveticaNeue-Thin";
@@ -301,20 +308,28 @@ section.best-products .triangulo2{
     right: 0px;
     z-index: -1;
 }
-SECTION.best-products .logo-transparent{
+section.best-products .logo-transparent{
     width: calc(80px + (150 - 80) * ((100vw - 300px) / (1600 - 300)));
 }
 
 /*-- products --*/
+section.products img{
+    width: 75%;
+}
+section.products a:hover{
+    text-decoration:none;
+}
 section.products h3,
 section.products h5{
     color: var(--blue);
 }
 section.products h5{
     font-family: "Roboto-Medium";
-    font-size: calc(13px + (20 - 13) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+    margin-top: 0.7rem;
+    margin-bottom: 0.2rem;
 }
-
+/*
 section.products .carousel-continer{
     position: relative;
 }
@@ -336,7 +351,7 @@ section.products .carousel-continer .prev{
 
     filter: drop-shadow(5px 5px 10px var(--gray));
 }
-
+*/
 /*-----------------
 ---   PRODUCTS  ---
 -----------------*/
@@ -366,15 +381,6 @@ section.product-descrip p,
 section.descripcion p{
     font-family: "HelveticaNeue-Light";
 }
-
-#v-itax section.descripcion{
-    color: var(--blue);
-    background-image: url(../img/backgrounds/bg4.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: top;
-}
 section .beneficios h4,
 section .beneficios ul>li{
     font-family: "HelveticaNeue-bold" !important;
@@ -390,141 +396,116 @@ section .ingredientes h4{
 section .beneficios ul{
     margin-left: 4%;
 }
+
+section.descripcion{
+    color: var(--blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+/*-------------------------*/
+/*-PRODUCTOS INDIVIDUALES--*/
+/*-------------------------*/
+
+#v-itax section.product-descrip h1{
+    /*color: var(--vitax) !important;*/
+    color: var(--blue) !important;
+}
+#v-itax section.descripcion{
+    background-image: url(../img/backgrounds/bg4.png);
+}
+/*-- --*/
+#v-thermokafe section.product-descrip h1{
+    /*color: var(--vtedetox) !important;*/
+}
+#v-thermokafe section.descripcion{
+    background-image: url(../img/backgrounds/bg14.jpg);
+}
 /*-- --*/
 #v-tedetox section.product-descrip h1{
     color: var(--vtedetox) !important;
 }
 #v-tedetox section.descripcion{
-    color: var(--blue);
-    /*
-    background-image: url(../img/backgrounds/bg5.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: top;
-    */
+    background-image: url(../img/backgrounds/bg15.jpg);
+}
+/*-- --*/
+#v-itarly section.product-descrip h1{
+    color: var(--vitarly) !important;
+}
+#v-itarly section.descripcion{
+    background-image: url(../img/backgrounds/bg6.png);
 }
 /*-- --*/
 #v-collagen section.product-descrip h1{
     color: var(--vcolagen) !important;
 }
 #v-collagen section.descripcion{
-    color: var(--blue);
     background-image: url(../img/backgrounds/bg5.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: top;
 }
 /*-- --*/
-#v-kafetermo section.product-descrip h1{
-    color: var(--vkafetermo) !important;
+#neurokafe section.product-descrip h1{
+    color: var(--neurokafe) !important;
 }
-#v-kafetermo section.descripcion{
-    color: var(--blue);
-    /*
-    background-image: url(../img/backgrounds/bg5.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: top;
-    */
+#neurokafe section.descripcion{
+    background-image: url(../img/backgrounds/bg14.jpg);
 }
 /*-- --*/
 #v-organex section.product-descrip h1{
     color: var(--vorganex) !important;
 }
 #v-organex section.descripcion{
-    color: var(--blue);
     background-image: url(../img/backgrounds/bg6.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: top;
 }
 /*-- --*/
 #v-glutation section.product-descrip h1{
-    color: var(--vglutation) !important;
+    /*color: var(--vglutation) !important;*/
 }
 #v-glutation section.descripcion{
-    color: var(--blue);
     background-image: url(../img/backgrounds/bg7.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: top;
 }
 /*-- --*/
 #v-glucalose section.product-descrip h1{
     color: var(--vglucalose) !important;
 }
 #v-glucalose section.descripcion{
-    color: var(--blue);
     background-image: url(../img/backgrounds/bg8.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: top;
 }
 /*-- --*/
 #v-itadol section.product-descrip h1{
     color: var(--vitadol) !important;
 }
 #v-itadol section.descripcion{
-    color: var(--blue);
     background-image: url(../img/backgrounds/bg9.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: top;
 }
 /*-- --*/
 #v-control section.product-descrip h1{
     color: var(--vcontrol) !important;
 }
 #v-control section.descripcion{
-    color: var(--blue);
     background-image: url(../img/backgrounds/bg10.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: top;
 }
 /*-- --*/
 #v-fortyflora section.product-descrip h1{
     color: var(--vfortyflora) !important;
 }
 #v-fortyflora section.descripcion{
-    color: var(--blue);
     background-image: url(../img/backgrounds/bg11.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: top;
 }
 /*-- --*/
 #v-curcumax section.product-descrip h1{
     color: var(--vcurcumax) !important;
 }
 #v-curcumax section.descripcion{
-    color: var(--blue);
     background-image: url(../img/backgrounds/bg12.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: top;
 }
 /*-- --*/
 #v-italboost section.product-descrip h1{
     color: var(--vitalboost) !important;
 }
 #v-italboost section.descripcion{
-    color: var(--blue);
     background-image: url(../img/backgrounds/bg13.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: top;
 }
 /*-- --*/
 #v-glutax section.product-descrip h1{

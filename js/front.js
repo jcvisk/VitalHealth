@@ -54,12 +54,14 @@ $(document).ready(function () {
 
     
     //Agregando la clase active en la seccion en la que se encuentra
+    /*
     let url = $(location).attr('href');
     $('.nav-link').each(function(i, obj) {
         if (obj == url) {
             $(this).parent().addClass('active');
         }
     });
+    */
 
 });
 

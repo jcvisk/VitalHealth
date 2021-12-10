@@ -77,9 +77,9 @@
     background-color: var(--vtedetox);
     --hover: var(--vtedetox);
 }
-.btn-vkafetermo{
-    background-color: var(--vkafetermo);
-    --hover: var(--vkafetermo);
+.btn-neurokafe{
+    background-color: var(--neurokafe);
+    --hover: var(--neurokafe);
 }
 .btn-vglucalose{
     background-color: var(--vglucalose);
@@ -109,6 +109,14 @@
     background-color: var(--vitalboost);
     --hover: var(--vitalboost);
 }
+.btn-vitarly{
+    background-color: var(--vitarly);
+    --hover: var(--vitarly);
+}
+.btn-vthermokafe{
+    background-color: var(--vthermokafe);
+    --hover: var(--vthermokafe);
+}
 
 .btn-vitax:hover,
 .btn-vitax:focus,
@@ -120,8 +128,8 @@
 .btn-vcontrol:focus,
 .btn-vtedetox:hover,
 .btn-vtedetox:focus,
-.btn-vkafetermo:hover,
-.btn-vkafetermo:focus,
+.btn-neurokafe:hover,
+.btn-neurokafe:focus,
 .btn-vglucalose:hover,
 .btn-vglucalose:focus,
 .btn-vfortyflora:hover,
@@ -135,7 +143,11 @@
 .btn-vcurcumax:hover,
 .btn-vcurcumax:focus,
 .btn-vitalboost:hover,
-.btn-vitalboost:focus{
+.btn-vitalboost:focus,
+.btn-vitarly:hover,
+.btn-vitarly:focus,
+.btn-vthermokafe:hover,
+.btn-vthermokafe:focus{
     animation: pulse 1s;
     box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
     color: black;
