@@ -63,7 +63,7 @@
 .wrapper .facebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
-    background-color: #3b5999;
+    background-color: #1877f2;
     color: #ffffff !important;
 }
 .wrapper .instagram:hover,
