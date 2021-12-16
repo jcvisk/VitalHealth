@@ -8,7 +8,7 @@ footer.footer{
 footer.footer ul>li,
 footer.footer ul>li>a{
     font-family: "HelveticaNeue-Light";
-    font-size: calc(15px + (18 - 15) * ((100vw - 300px) / (1600 - 300))) !important;
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300))) !important;
     color: white !important;
     padding: 0;
 }
@@ -17,7 +17,7 @@ footer.footer .info{
 }
 footer.footer .text-disclaimer{
     color: var(--green-light) !important;
-    font-size: calc(10px + (15 - 10) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(10px + (17 - 10) * ((100vw - 300px) / (1600 - 300)));
 }
 footer .triangulo3{
     position: absolute;

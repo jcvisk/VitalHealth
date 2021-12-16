@@ -277,6 +277,13 @@ section.values .card-blue>p{
     font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
     color: white;
 }
+/*-----------------
+--- FABRICACIÓN ---
+-----------------*/
+section.manufact{
+    font-family: "HelveticaNeue-Light";
+    color: var(--blue);
+}
 
 /*-----------------
 ---   PRODUCTS  ---
@@ -402,7 +409,7 @@ section.descripcion{
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    background-position-y: top;
+    background-position-y: bottom;
 }
 
 /*-------------------------*/
