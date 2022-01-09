@@ -11,19 +11,19 @@ $(document).ready(function () {
     */
 
     //Cambiando colores del navbar
-    $(window).scroll(function(){
+    $(window).scroll(function () {
         if ($("#nav").offset().top > 56) {
             //Cambiando color de navbar
             $("#nav").removeClass("bg-transparent");
-            $("#nav").addClass("bg-glass");  
+            $("#nav").addClass("bg-glass");
 
             //cambiando color de letras del nav
             if ($('#header').hasClass("navbar-blue")) {
                 $("#header").removeClass('navbar-blue');
                 $("#header").addClass('flag');
             }
-            
-        }else{
+
+        } else {
             //Cambiando color de navbar
             $("#nav").removeClass("bg-glass");
             $("#nav").addClass("bg-transparent");
@@ -35,13 +35,13 @@ $(document).ready(function () {
             }
         }
     });
-    
+
     /*
     Haciendo que el nav abarque toda la pantalla al desplegarse
     */
-    $('#nav-toggler').click(function(){
+    $('#nav-toggler').click(function () {
         $("#header").toggleClass('align-start');
-        
+
         $("#nav").toggleClass('align-start');
         $("#nav").toggleClass('bg-glass-toggle');
     });
@@ -52,7 +52,7 @@ $(document).ready(function () {
     let navHeight = $('#header').height();
     $('#separator').css("height", navHeight);
 
-    
+
     //Agregando la clase active en la seccion en la que se encuentra
     /*
     let url = $(location).attr('href');
@@ -62,6 +62,16 @@ $(document).ready(function () {
         }
     });
     */
+
+    /* JS PARA QUE LOS METATAGAS SEAN DIANMICOS*/
+    //Asignando dominio a metaTags
+    var dominio = $(location).attr('hostname');
+    $('#metatagUrlFacebook').attr('content', dominio)
+    $('#metatagUrlTwitter').attr('content', dominio)
+    //Asignando direccion de favicon a metaTags
+    dominio += "/favivon.png"
+    $('#metatagFaviconFacebook').attr('content', dominio)
+    $('#metatagFaviconTwitter').attr('content', dominio)
 
 });
 
