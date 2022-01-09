@@ -69,7 +69,7 @@ $(document).ready(function () {
     $('#metatagUrlFacebook').attr('content', dominio)
     $('#metatagUrlTwitter').attr('content', dominio)
     //Asignando direccion de favicon a metaTags
-    dominio += "/favivon.png"
+    dominio += "/favicon.png"
     $('#metatagFaviconFacebook').attr('content', dominio)
     $('#metatagFaviconTwitter').attr('content', dominio)
 
