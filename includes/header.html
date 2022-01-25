@@ -79,34 +79,3 @@
         </div>
     </div>
 </nav>
-<script>
-
-    let id = document.getElementsByTagName('body')[0].getAttribute('id');
-
-    switch (id) {
-        case 'index':
-            $('#home_menu').addClass('active');
-            break;
-        case 'founders':
-            $('#compania_menu').addClass('active')
-            break;
-        case 'manufacturing':
-            $('#compania_menu').addClass('active')
-            break;
-        case 'products':
-            $('#products_menu').addClass('active');
-            break;
-        case 'opportunity':
-            $('#opportunity_menu').addClass('active');
-            break;
-        case 'reward':
-            $('#opportunity_menu').addClass('active');
-            break;
-        default:
-            let url = window.location.href;
-            if (url.includes('/products/')) {
-                $('#products_menu').addClass('active');
-            }
-    }
-
-</script>
