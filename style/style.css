@@ -25,7 +25,8 @@
     --vcurcumax: #ccb732;
     --vitalboost: #3eb3b0;
     --vitarly: #006fad;
-    --vthermokafe: #b02626;
+    --vthermokafe: #961726;
+    --lovekafe: #a71a96;
 }
 *, *::before, *::after {
     box-sizing: border-box;
@@ -412,6 +413,139 @@ section.descripcion{
     background-position-y: bottom;
 }
 
+/*---------------------
+---   OPPORTUNITY   ---
+----------------------*/
+section.building{
+    color: white;
+    background-image: url(../img/backgrounds/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: center;
+}
+
+/*-- building --*/
+section.building table th{
+    vertical-align: middle;
+}
+section.building table td{
+    padding: 1.7rem;
+}
+section.building p{
+    font-family: "HelveticaNeue-Thin";
+    margin: 0;
+}
+
+/*-- marketing and solidity --*/
+section.markidity h1{
+    color: var(--blue);
+}
+section.markidity h4{
+    color: var(--green);
+    font-size: calc(17px + (30 - 17) * ((100vw - 300px) / (1600 - 300)));
+}
+section.markidity h4.plus{
+    color: var(--green);
+    font-size: calc(17px + (40 - 17) * ((100vw - 300px) / (1600 - 300)));
+}
+section.markidity h5{
+    color: var(--blue);
+    font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+section.markidity p{
+    color: var(--blue);
+    font-family: "Roboto";
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+section.markidity img{
+    filter: drop-shadow(0px 0px 20px var(--gray));
+}
+
+.semicircle2{
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    bottom: -5%;
+    width: 50%;
+}
+
+/*---------------------
+---   REWARD PLAN   ---
+----------------------*/
+section.takecharge{
+    color: white;
+    background-image: url(../img/backgrounds/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: center;
+    height: calc(270px + (500 - 270) * ((100vw - 300px) / (1600 - 300)));
+}
+
+/*-- joined --*/
+section.joined h4{
+    color: var(--blue);
+    font-size: calc(17px + (32 - 17) * ((100vw - 300px) / (1600 - 300)));
+}
+section.joined p{
+    color: var(--blue);
+    font-family: "Roboto";
+    font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+section.joined .border-right{
+    border-right: 2px solid var(--gray) !important;
+}
+/*-- points --*/
+section.points h4{
+    color: var(--green);
+    font-size: calc(17px + (27 - 17) * ((100vw - 300px) / (1600 - 300)));
+    font-style: italic;
+}
+section.points p{
+    color: var(--blue);
+    font-family: "Roboto";
+    font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+/*-- reward plan --*/
+section.reward h2{
+    color: var(--blue);
+}
+section.reward p{
+    color: var(--blue);
+    font-family: "Roboto";
+    font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+section.reward .btn-download{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 7rem;
+    padding: 2% 18%;
+    background-color: var(--green);
+    border: 2px solid var(--green);
+    font-weight: bold;
+    font-size: calc(14px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
+    --hover: var(--green);
+}
+section.reward .btn-download:hover,
+section.reward .btn-download:focus{
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+    color: var(--green) !important;
+    background-color: white !important;
+}
+
+section .semicircle3{
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    bottom: -5%;
+    width: 50%;
+}
+
 /*-------------------------*/
 /*-PRODUCTOS INDIVIDUALES--*/
 /*-------------------------*/
@@ -425,7 +559,7 @@ section.descripcion{
 }
 /*-- --*/
 #v-thermokafe section.product-descrip h1{
-    /*color: var(--vtedetox) !important;*/
+    color: var(--vthermokafe) !important;
 }
 #v-thermokafe section.descripcion{
     background-image: url(../img/backgrounds/bg14.jpg);
@@ -528,3 +662,10 @@ section.descripcion{
     background-position-y: top;
 }
 */
+/*-- --*/
+#lovekafe section.product-descrip h1{
+    color: var(--lovekafe) !important;
+}
+#lovekafe section.descripcion{
+    background-image: url(../img/backgrounds/bg14.jpg);
+}

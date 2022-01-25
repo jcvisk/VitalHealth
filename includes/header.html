@@ -1,0 +1,112 @@
+<nav id="nav" class="navbar navbar-expand-xl navbar-light bg-transparent">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="logo" class="img-rspv" id="logo-header">
+        </a>
+        <button id="nav-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav n-nav-first text-uppercase">
+                <li class="nav-item d-block" id="home_menu">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown" id="compania_menu">
+                    <a href="" class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Compañía
+                    </a>
+                    <div class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdown"
+                        style="text-transform: none !important;">
+                        <a class="dropdown-item" href="manufacturing.html">Fabricación</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="founders.html">Fundadores</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown" id="products_menu">
+                    <a href="" class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Productos
+                    </a>
+                    <div class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdown"
+                        style="text-transform: none !important;">
+                        <a class="dropdown-item" href="products.html#nutcomp">Nutrición de cuerpo completo</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="products.html#conpes">Control de peso</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="products.html#enerejer">Energía y ejercicio</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="products.html#cabcuipiel">Cabello y cuidado de la
+                            piel</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="products.html#desintox">Desintoxicación</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="products.html#sistinmu">Sistema inmune</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown" id="opportunity_menu">
+                    <a href="" class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Oportunidad
+                    </a>
+                    <div class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdown"
+                        style="text-transform: none !important;">
+                        <a class="dropdown-item" href="opportunity.html">Tu oportunidad</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="reward_plan.html">Plan de recompensas</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Contáctanos</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav n-nav-last ml-auto">
+                <li class="nav-item item-blue">
+                    <a class="nav-link disabled" href="#">Inglés</a>
+                </li>
+                <li class="nav-item item-white">
+                    <a class="nav-link disabled" href="#" target="_blank">Inicia Sesión</a>
+                </li>
+                <li class="nav-item item-blue text-uppercase">
+                    <a class="nav-link disabled" href="#" target="_blank">Comienza Ahora</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<script>
+
+    let id = document.getElementsByTagName('body')[0].getAttribute('id');
+
+    switch (id) {
+        case 'index':
+            $('#home_menu').addClass('active');
+            break;
+        case 'founders':
+            $('#compania_menu').addClass('active')
+            break;
+        case 'manufacturing':
+            $('#compania_menu').addClass('active')
+            break;
+        case 'products':
+            $('#products_menu').addClass('active');
+            break;
+        case 'opportunity':
+            $('#opportunity_menu').addClass('active');
+            break;
+        case 'reward':
+            $('#opportunity_menu').addClass('active');
+            break;
+        default:
+            let url = window.location.href;
+            if (url.includes('/products/')) {
+                $('#products_menu').addClass('active');
+            }
+    }
+
+</script>

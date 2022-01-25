@@ -117,6 +117,10 @@
     background-color: var(--vthermokafe);
     --hover: var(--vthermokafe);
 }
+.btn-lovekafe{
+    background-color: var(--lovekafe);
+    --hover: var(--lovekafe);
+}
 
 .btn-vitax:hover,
 .btn-vitax:focus,
@@ -147,7 +151,9 @@
 .btn-vitarly:hover,
 .btn-vitarly:focus,
 .btn-vthermokafe:hover,
-.btn-vthermokafe:focus{
+.btn-vthermokafe:focus,
+.btn-lovekafe:hover,
+.btn-lovekafe:focus{
     animation: pulse 1s;
     box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
     color: black;

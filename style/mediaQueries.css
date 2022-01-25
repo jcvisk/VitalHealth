@@ -80,6 +80,15 @@
         top: -25%;
         width: 25%;
     }
+
+    /*-- marketing and solidity --*/
+    section .semicircle2{
+        position: absolute;
+        z-index: -1;
+        right: 0px;
+        bottom: -10%;
+        width: 35%;
+    }
 }
 
 /*-- lg (ipad pro) --*/
@@ -152,6 +161,15 @@
         top: -45%;
         width: 25%;
     }
+
+    /*-- marketing and solidity --*/
+    section .semicircle2{
+        position: absolute;
+        z-index: -1;
+        right: 0px;
+        bottom: -10%;
+        width: 30%;
+    }
 }
 
 /*-- xl --*/
@@ -220,6 +238,15 @@
         z-index: -1;
         right: 0px;
         top: -60%;
+        width: 18%;
+    }
+
+    /*-- marketing and solidity --*/
+    section .semicircle2{
+        position: absolute;
+        z-index: -1;
+        right: 0px;
+        bottom: -10%;
         width: 18%;
     }
 }
