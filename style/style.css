@@ -337,6 +337,9 @@ section.products h5{
     margin-top: 0.7rem;
     margin-bottom: 0.2rem;
 }
+section.products .separator{
+    height: calc(300px + (1350 - 300) * ((100vw - 300px) / (1600 - 300)));;
+}
 /*
 section.products .carousel-continer{
     position: relative;
