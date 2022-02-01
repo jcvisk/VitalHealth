@@ -55,7 +55,6 @@ $(document).ready(function () {
      * Agrega la clase active segun la página que se esté visualizando    
      */
     let id = document.getElementsByTagName('body')[0].getAttribute('id');
-    console.log(id)
     switch (id) {
         case 'index':
             $('#home_menu').addClass('active');
@@ -74,6 +73,9 @@ $(document).ready(function () {
             break;
         case 'reward':
             $('#opportunity_menu').addClass('active');
+            break;
+        case 'contact':
+            $('#contact_menu').addClass('active');
             break;
         default:
             let url = window.location.href;

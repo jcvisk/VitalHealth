@@ -27,6 +27,10 @@
     --vitarly: #006fad;
     --vthermokafe: #961726;
     --lovekafe: #a71a96;
+    --vitalix: #b3284c;
+    --vasculax: #4b5fa3;
+    --vitalay: #83b4c5;
+    --vitaren: #a42d79;
 }
 *, *::before, *::after {
     box-sizing: border-box;
@@ -89,6 +93,10 @@ body{
 @font-face {
     font-family: "Roboto-Bold";
     src: url(../assets/fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: "Roboto-Bold-Italic";
+    src: url(../assets/fonts/Roboto/Roboto-BoldItalic.ttf);
 }
 
 /*-- Texts --*/
@@ -551,6 +559,64 @@ section .semicircle3{
     bottom: -5%;
     width: 50%;
 }
+/*------------------------
+---      CONTACT       ---
+------------------------*/
+/*-- carousel --*/
+#carouselContact .carousel-caption{
+    top: 40%;
+    left: 0%;
+    margin: auto;
+}
+#carouselContact .carousel-caption h1{
+    color: white;
+}
+/*-- cards --*/
+section.contact-card{
+    color: white;
+}
+section.contact-card h2{
+    color: var(--blue);
+    font-style: italic;
+}
+section.contact-card .row>div{
+    display: flex;
+    flex-direction: column;
+}
+section.contact-card .card-blue{
+    background-color: var(--blue);
+    padding: 5%;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    flex-grow: 1;
+}
+section.contact-card .card-blue>h3{
+    font-family: "Roboto-Bold-Italic";
+    font-size: calc(14px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
+    color: white;
+}
+section.contact-card .card-blue>img{
+    width: 20%;
+}
+section.contact-card .card-blue>i{
+    font-size: calc(14px + (60 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+section.contact-card .card-blue>p{
+    font-family: "Roboto-Bold-Italic";
+    font-size: calc(14px + (27 - 14) * ((100vw - 300px) / (1600 - 300)));
+    color: white;
+}
+section.contact-separador{
+    height: calc(500px + (1500 - 500) * ((100vw - 300px) / (1600 - 300)));
+}
+section.contact-separador .semicircle4{
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    bottom: 0%;
+    width: calc(200px + (320 - 200) * ((100vw - 300px) / (1600 - 300)));
+}
 
 /*-------------------------*/
 /*-PRODUCTOS INDIVIDUALES--*/
@@ -674,4 +740,32 @@ section .semicircle3{
 }
 #lovekafe section.descripcion{
     background-image: url(../img/backgrounds/bg14.jpg);
+}
+/*-- --*/
+#vitalix section.product-descrip h1{
+    color: var(--vitalix) !important;
+}
+#vitalix section.descripcion{
+    background-image: url(../img/backgrounds/bg5.png);
+}
+/*-- --*/
+#vasculax section.product-descrip h1{
+    color: var(--vasculax) !important;
+}
+#vasculax section.descripcion{
+    background-image: url(../img/backgrounds/bg6.png);
+}
+/*-- --*/
+#vitalay section.product-descrip h1{
+    color: var(--vitalay) !important;
+}
+#vitalay section.descripcion{
+    background-image: url(../img/backgrounds/bg6.png);
+}
+/*-- --*/
+#vitaren section.product-descrip h1{
+    color: var(--vitaren) !important;
+}
+#vitaren section.descripcion{
+    background-image: url(../img/backgrounds/bg6.png);
 }

@@ -121,6 +121,22 @@
     background-color: var(--lovekafe);
     --hover: var(--lovekafe);
 }
+.btn-vitalix{
+    background-color: var(--vitalix);
+    --hover: var(--vitalix);
+}
+.btn-vasculax{
+    background-color: var(--vasculax);
+    --hover: var(--vasculax);
+}
+.btn-vitalay{
+    background-color: var(--vitalay);
+    --hover: var(--vitalay);
+}
+.btn-vitaren{
+    background-color: var(--vitaren);
+    --hover: var(--vitaren);
+}
 
 .btn-vitax:hover,
 .btn-vitax:focus,
@@ -153,7 +169,15 @@
 .btn-vthermokafe:hover,
 .btn-vthermokafe:focus,
 .btn-lovekafe:hover,
-.btn-lovekafe:focus{
+.btn-lovekafe:focus,
+.btn-vitalix:hover,
+.btn-vitalix:focus,
+.btn-vasculax:hover,
+.btn-vasculax:focus,
+.btn-vitalay:hover,
+.btn-vitalay:focus,
+.btn-vitaren:hover,
+.btn-vitaren:focus{
     animation: pulse 1s;
     box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
     color: black;
