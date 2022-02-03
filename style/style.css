@@ -31,6 +31,9 @@
     --vasculax: #4b5fa3;
     --vitalay: #83b4c5;
     --vitaren: #a42d79;
+
+    --allow:#7DAF3B;
+    --disallow:#af3b3b;
 }
 *, *::before, *::after {
     box-sizing: border-box;
@@ -768,4 +771,15 @@ section.contact-separador .semicircle4{
 }
 #vitaren section.descripcion{
     background-image: url(../img/backgrounds/bg6.png);
+}
+
+/*cookies*/
+.cookies p{
+    font-family: "Roboto";
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
+    color: white;
+    margin: 0;
+}
+.cookies a{
+    color: var(--blue);
 }

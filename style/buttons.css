@@ -42,6 +42,21 @@
     border-radius: 32px;
     --hover: var(--blue);
 }
+.btn-allow{
+    font-family: "Roboto";
+    background-color: var(--blue);
+    color: white;
+    font-size: 0.8rem;
+    --hover: var(--blue);
+}
+
+.btn-disallow{
+    font-family: "Roboto";
+    background-color: var(--disallow);
+    color: white;
+    font-size: 0.8rem;
+    --hover: var(--disallow);
+}
 
 .btn-know_more:hover, 
 .btn-know_more:focus,
@@ -50,7 +65,11 @@
 .btn-green:hover, 
 .btn-green:focus,
 .btn-blue:hover, 
-.btn-blue:focus{
+.btn-blue:focus,
+.btn-allow:hover,
+.btn-allow:focus,
+.btn-disallow:hover,
+.btn-disallow:focus{
     animation: pulse 1s;
     box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
     color: black;

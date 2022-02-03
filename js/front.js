@@ -97,8 +97,21 @@ $(document).ready(function () {
 });
 
 
+$('#btn-aceptar-cookies').click(function(){
+    $('#banner-cookies').css('display', 'none')
+    localStorage.setItem('cookies', true);
+});
 
+$('#btn-rechazar-cookies').click(function(){
+    $('#banner-cookies').css('display', 'none')
+    localStorage.setItem('cookies', true);
+});
 
+if(!localStorage.getItem('cookies')){
+    $('#banner-cookies').css('display', 'block')
+}else{
+    $('#banner-cookies').css('display', 'none')
+}
 
 
 
